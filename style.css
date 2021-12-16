@@ -1,0 +1,160 @@
+:root{
+    /* ### Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan:hsl(178, 100%, 50%);
+
+    --Very-dark-blue-main-bg: hsl(217, 54%, 11%); 
+    /* (main BG): */
+    --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    /* (card BG) */
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    /* (line) */
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    background-color:var(--Very-dark-blue-main-bg); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    width:90%;
+    height:35em;
+    background-color:var(--Very-dark-blue-card-bg);
+    border-radius:0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 22px 10px rgba(0, 0, 10, 0.589);
+}
+
+.card_info{
+    width:90%;
+    height:100%;
+}
+
+.card_image{
+    width:100%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:2em 0 0 0 ;
+    border-radius:0.5em;
+}
+
+.image_cube{
+    width:100%;
+    height:100%;
+    margin:0 0 0 0;
+    border-radius:0.5em;
+}
+
+a{
+    text-decoration: none;
+    color:var(--White);
+}
+
+a:hover{
+    color:var(--Cyan);
+}
+
+.container_paragraph{
+    color:var(--Soft-blue);
+    font-weight:600;
+}
+
+.eth{
+    color:var(--Cyan);
+    font-weight:600;
+    margin: 0;
+}
+
+.time{
+    color:rgb(168, 164, 164);
+    font-weight:600;
+    margin: 0;
+}
+
+.date{
+    width:100%;
+    height:3em;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom:1px solid var(--White);
+    margin:0 0 0.5em 0;
+}
+
+.ethereum{
+    width:0.8em;
+    margin: 0 0.5em 0 0 ;
+}
+
+.clock{
+    width:1em;
+    margin: 0;
+    margin: 0 0.5em 0 0 ;
+}
+
+.creation{
+    width:100%;
+    height:4em;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+.creation_paragraph{
+    display: flex;
+    align-items: center;
+    color:var(--Soft-blue);
+    font-weight:600;
+}
+.avatar{
+    width:3em;
+    height:3em;
+    margin:0 1em 0 0 ;
+    border:1px solid var(--White);
+    border-radius:50%;
+}
+
+.creation_link{
+    margin:0 0 0 0.5em;
+}
+
+/* viene la parte del hover de la imagen */
+.card_image:hover{
+    background-color:var(--Cyan);
+    transition: 2s;
+    z-index:10;
+    background-image:url(/images/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:brightness(100%);
+}
+
+.image_cube:hover{
+    filter:opacity(0.5);
+}
+
+@media only screen and (min-width: 768px) {
+    .card{
+        width:20em;
+        height:35em;
+    }
+  }
+
