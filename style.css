@@ -141,7 +141,7 @@ a:hover{
     background-color:var(--Cyan);
     transition: 2s;
     z-index:10;
-    background-image:url(images/icon-view.svg);
+    background-image:url(/images/icon-view.svg);
     background-position: center;
     background-repeat: no-repeat;
     filter:brightness(100%);
