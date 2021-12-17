@@ -69,6 +69,7 @@ a{
 
 a:hover{
     color:var(--Cyan);
+    transition:1s;
 }
 
 .container_paragraph{
@@ -139,9 +140,10 @@ a:hover{
 /* viene la parte del hover de la imagen */
 .card_image:hover{
     background-color:var(--Cyan);
-    transition: 2s;
+    transition: 4s;
     z-index:10;
     background-image:url(./images/icon-view.svg);
+    transform:rotate(3600deg);
     background-position: center;
     background-repeat: no-repeat;
     filter:brightness(100%);
@@ -149,6 +151,7 @@ a:hover{
 
 .image_cube:hover{
     filter:opacity(0.5);
+    transition:2s;
 }
 
 @media only screen and (min-width: 768px) {
